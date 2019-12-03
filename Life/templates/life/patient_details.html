@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+
+{% block maincontent %}
+<!--inner banner-->
+<div class="inner-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-7">
+        <h1>Patient Details</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<!--inner banner End-->
+
+<!--Main Content Start-->
+
+<div class="row">
+
+
+  <div class="patient-details col-xs-4">
+    <h3 class='p-detail'> Profile </h3>
+    {% if patient.picture.url %}
+    <img src="{{ patient.picture.url }}" class="patient-image">
+    {% endif %}
+    <div class="row">
+      <div class=" patient-detail-label col-xs-5">
+          Patient Name:
+      </div>
+      <div class=" patient-detail-value col-xs-5">
+          {{ patient.name }}
+      </div>
+    </div>
+    <div class="row">
+      <div class=" patient-detail-label col-xs-5">
+          Age:
+      </div>
+      <div class=" patient-detail-value col-xs-5">
+          {{ patient.age }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="patient-detail-label col-xs-5">
+          Patient Id:
+      </div>
+      <div class="patient-detail-value col-xs-5">
+          {{ patient.pid }}
+      </div>
+    </div>
+  </div>
+
+
+
+  
+
+
+
+  <div class="col-xs-6">
+    <div class="patients-appointments m-b-xl row">
+
+      {% if appointments %}
+
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h3 class>Appointments</h3>
+        </div>
+      </div>
+
+      
+      <div class="row appointment-header">
+        <div class="col-md-1">S.No.</div>
+        <div class="col-md-5">Doctor</div>
+        <div class="col-md-3">Date</div>
+        <div class="col-md-3">Time</div>
+      </div>
+
+      {% for appointment in appointments %}
+      
+      <div class="row appointment-item">
+          <div class="col-md-1">{{ forloop.counter }}</div>
+          <div class="col-md-5">{{  appointment.dname.name }}</div>
+          <div class="col-md-3">{{ appointment.dtime.date }}</div>
+          <div class="col-md-3">{{ appointment.dtime.time }}</div>
+      </div>
+    
+      {%  endfor %}
+
+      {% else %}
+
+      <h3>No Appointments</h3>
+
+      {% endif %}
+
+
+
+    </div>
+
+    <div class="appointment row">
+      <div class="col-md-6 col-md-offset-4">
+        <a type="button" class="btn btn-primary appoint-btn" data-toggle="modal" data-target="#exampleModal">
+          Book an Appointment
+        </a>
+      </div>
+    </div>
+
+    {% if error %}
+    <div class="alert alert-danger col-sm-8 col-md-offset-2 m-t-xl p-y-sm text-center">
+      <h5>{{ error }}</h5>
+     </div>
+     {% endif %}
+
+  </div>
+
+  
+
+</div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header m-y-md p-x-md">
+          <h5 class="modal-title p-b-md" id="exampleModalLabel">
+            Select the doctor name and a time that suites you
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </h5>
+        </div>
+        <div class="modal-body">
+        <form action="{% url 'patient_details' patient.pid %}" method="POST" class="app-form">
+          {% csrf_token %}
+
+
+          {% for field in form %}
+          <div class="form-group">
+              <div class="row">{{ field.errors }}</div>
+              <div class="row">
+                <div class="col-md-3 m-t-sm">{{ field.label_tag }}</div>
+                <div class="col-md-8">{{ field }}</div>
+              </div>
+          </div>
+          {% endfor %}
+
+          <div class="row">
+            <div class="col-md-3 col-md-offset-4">
+              <input type="submit" value="save" class="p-y-sm">
+            </div>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--Main Content End-->
+{% endblock maincontent %}

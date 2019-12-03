@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block maincontent %}
+<!--inner banner-->
+<div class="inner-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1>Login</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<!--inner banner End-->
+
+<!--Main Content Start-->
+<section class="appointment-form">
+<div class="container">
+
+{% if error %}
+<div class="alert alert-danger col-sm-5 col-sm-offset-4 m-t-xl p-y-sm">
+    {{ error }}
+</div>
+
+
+{% endif %}
+
+
+<form action="{% url 'authenticate' usertype 1 %}" method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  <div class="app-form">
+
+
+    <div class="form-group row">
+      <label for="username" class="col-sm-1 col-sm-offset-4 col-form-label  p-t-sm">Username:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="username" placeholder="Enter your {{ usertype }} ID" name="username">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="password" class="col-sm-1 col-sm-offset-4 col-form-label  p-t-sm">Password:</label>
+      <div class="col-sm-4">
+        <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+      </div>
+    </div>
+
+
+    <div class="form-group row">
+      <div class="col-sm-3 col-sm-offset-5 p-t-lg p-b-lg">
+        <input type="submit" class="btn btn-primary" value='Sign in'></input>
+      </div>
+    </div>
+
+  </div>
+
+
+</form>
+</div>
+</section>
+
+
+
+{% endblock maincontent %}
+<!--Main Content End-->

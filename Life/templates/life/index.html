@@ -1,0 +1,388 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block maincontent %}
+
+    <!--Main Slider-->
+    {% include 'partials/_slider.html'%}
+    <!--Main Slider End-->
+<!--Main Content Start-->
+<div class="main-content">
+  <!--Welcome Section-->
+  <section class="welcome-section">
+    <div class="container">
+      <div class="row">
+        <div class="welcome-box">
+          <div class="col-md-6 col-sm-6">
+            <div class="welcome-text">
+              <div class="sectio-title-2"> <strong>Welcome to your</strong>
+                <h2>Life Care</h2>
+              </div>
+              <p>Today, Life Group of Hospitals, Varanasi is redefining healthcare excellence by combining the best available technology
+                 and medical expertise to ensure patients receive comprehensive and integrated services,
+                 including the utmost compassion, support and care.</p>
+              <p>Recognized as a world renowned facility,Life Group of Hospitals is not only providing outstanding care and treatment, 
+                but is also improving clinical outcomes using Information Technology, 
+                comprehensive research programs and education all in one sprawling campus, creating an environment dedicated to healing</p>
+              <strong class="signature">Jinesh Jain</strong>
+              <h6 class="designation">Administrator Life Care Hospital</h6>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="welcome-img"> <img src="{% static 'life/images/welcome.jpg' %}" alt=""> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Welcome Section End-->
+
+  <!--Home Services Start-->
+  <section class="home-features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <div class="features-box">
+            <h3>Pro Health</h3>
+            <p>This unique 3-year program is specially designed to help
+              PREDICT, PREVENT, OVERCOME lifestyle diseases.
+              Make yourself disease free</p>
+            <a href="">Get Free Appointment</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="features-box selected">
+            <h3>First Aid</h3>
+            <p>The aims of first aid are to preserve life, prevent harm, and promote recovery.
+              In first aid, ABC stands for airway, breathing, and circulation.
+              </p>
+            <a href="contact-2.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="features-box">
+            <h3>Time Slots</h3>
+              <p><span>Morning slot</span>06:00am - 12 pm<br>
+              <span>Afternoon slot:</span> 12pm - 06:00pm<br>
+              <span>Evening slot:</span> 06:00pm - 12:00am<br>
+              <span>Emergency:</span> 12:00am - 06:00am<br>
+            </p>
+            <br>
+            <a href="#">Callfor Info: +91 9876 5433</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+   <!--Heart Care Start-->
+   <section class="heart-care-services">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title-3 white"> <strong>Our Core</strong>
+            <h2>Expert Services</h2>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-5">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#service-1" aria-controls="service-1" role="tab"
+                data-toggle="tab"> <i class="fa fa-graduation-cap"></i> Experienced Surgeons</a></li>
+            <li role="presentation"><a href="#service-2" aria-controls="service-2" role="tab" data-toggle="tab"> <i
+                  class="fa fa-heartbeat"></i> Special Treatments</a></li>
+            <li role="presentation"><a href="#service-3" aria-controls="service-3" role="tab" data-toggle="tab"> <i
+                  class="fa fa-cloud"></i> Comfort Environment</a></li>
+            <li role="presentation"><a href="#service-4" aria-controls="service-5" role="tab" data-toggle="tab"> <i
+                  class="fa fa-medkit"></i> High Tech Equipments</a></li>
+            <li role="presentation"><a href="#service-5" aria-controls="service-6" role="tab" data-toggle="tab"> <i
+                  class="fa fa-umbrella"></i> Personalized Care</a></li>
+          </ul>
+        </div>
+        <div class="col-md-7 col-sm-7">
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="service-1">
+              <div class="ser-tab-text">
+                <h3>Experienced Surgeons</h3>
+                <p> <i class="fa fa-graduation-cap"></i>Keeping your health under constant vigilance is important to live a stress-free life. Having the best doctors to treat you for the health issues you face, provides relief like no other. </p>
+                <ul>
+                  <li><i class="fa fa-check"></i> Team of best surgeons</li>
+                  <li><i class="fa fa-check"></i> Complete recovery from disease</li>
+                  <li><i class="fa fa-check"></i> Accomplished medical practitioners</li>
+                </ul>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="service-2">
+              <div class="ser-tab-text">
+                <h3>Special Treatments</h3>
+                <p> <i class="fa fa-heartbeat"></i> Our annual Preventive Health Checks are customised to take into consideration your lifestyle and risk factors.Our health checks include consultations with accomplished doctors and technology-aided follow-ups with the aim to ensure that you stay in the pink of health at all times.</p>
+                <ul>
+                  <li><i class="fa fa-check"></i> Comprehensive Diagnosis</li>
+                  <li><i class="fa fa-check"></i> Artificial Intelligence based tests</li>
+                  <li><i class="fa fa-check"></i> Physiotherapy and counselling</li>
+                </ul>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="service-3">
+              <div class="ser-tab-text">
+                <h3>Comfort Environment</h3>
+                <p> <i class="fa fa-cloud"></i> At life, you will instantly discover that you are so much more than just a patient. Right from the way we have designed our patient rooms to the way we serve you, we have left no stone unturned. </p>
+                <ul>
+                  <li><i class="fa fa-check"></i> Helpful Staff</li>
+                  <li><i class="fa fa-check"></i> Supportive doctors.</li>
+                  <li><i class="fa fa-check"></i> Sed Caring Nurses</li>
+                </ul>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="service-4">
+              <div class="ser-tab-text">
+                <h3>High Tech Equipments</h3>
+                <p> <i class="fa fa-medkit"></i> Lifecare incorporates the latest technology and medical equipment in patient care that helps the doctors diagnose diseases and treat patients effectively and efficiently. Lifecare offers cutting edge technology for diagnostic and therapeutic procedures.</p>
+                <ul>
+                  <li><i class="fa fa-check"></i> Digitalized X-Ray, USG, CT-Scan, MRI</li>
+                  <li><i class="fa fa-check"></i> EEG (Electroencephalography).</li>
+                  <li><i class="fa fa-check"></i> Motorized Thrombectomy System.</li>
+                </ul>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="service-5">
+              <div class="ser-tab-text">
+                <h3>Financial Service</h3>
+                <p> <i class="fa fa-umbrella"></i> Lifecare tries to remove financial considerations from providing medical care. We have direct payment contracts with a variety of international insurers. A dedicated staff of international account representatives can assist patients and families with financial details before, during and after their visit to Lifecare. </p>
+                <ul>
+                  <li><i class="fa fa-check"></i> Information about deposits and payment</li>
+                  <li><i class="fa fa-check"></i> Fee estimates and fee updates for medical services</li>
+                  <li><i class="fa fa-check"></i> Cost estimator tool</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testi-faq">
+    <div class="container">
+      <div class="row">
+
+        <!--Testimonials Start-->
+        <div class="col-md-12">
+          <div class="home-testimonials">
+            <div class="sectio-title-2"> <strong>Read What Says Our</strong>
+              <h2>Happy Patients</h2>
+            </div>
+            <div id="testimonial-slider" class="owl-carousel owl-theme">
+
+              <!--Slider Start-->
+              <div class="item">
+                <div class="testimonial-holder">
+                  <div class="user-thumb"> <img src="{% static 'life/images/t-user1.jpg' %}" alt=""> <strong>Anna
+                      Suryakant</strong>
+                    <i>A cancer patient</i> </div>
+                  <div class="test-text">
+                    <p>Dear Dr. Rutherford, as of tomorrow it will have been a year since you changed my life. I wanted to let you know how great I am doing and wanted to thank you from the very bottom of my heart. I owe you so much I could never be able to repay you. When you first met me I was at a constant 7 or 8 (sometimes higher) on the pain scale.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-holder">
+                  <div class="user-thumb"> <img src="{% static 'life/images/t-user2.jpg' %}" alt=""> <strong>Ramesh Kumar</strong>
+                    <i>A Heart patient</i> </div>
+                  <div class="test-text">
+                    <p>I came to India as a medical tourism patient to Dr. Jackie Chan. I am thankful to my stars to be treated under him who became more of a friend to me. I lot 82lbs in six months after my bypass and lost my Diabetes, Hypertension, Cholesterol and Joint pain. I am back to my energetic best in the last few months.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-holder">
+                  <div class="user-thumb"> <img src="{% static 'life/images/t-user3.jpg' %}" alt=""> <strong>Kumar Nandini</strong>
+                    <i>An orthopaedic patient</i> </div>
+                  <div class="test-text">
+                    <p>Kumaradarani is now six years post liver transplant and is enjoying her new lease on life she is now the proud grandmother. All this seemed like a distant dream six years ago when she could not care for her children, barely walk nor eat and was worried about her a future she did not think she could be a part of.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--Slider End-->
+
+            </div>
+          </div>
+        </div>
+        <!--Testimonials End-->
+      </div>
+      </section>
+
+  <!--Home Services End-->
+      
+  <!-- Team Start
+  <section class="team">
+    <div class="container">
+      <div class="row">
+        <div class="section-title-3"> <strong>Our Team</strong>
+          <h2>Expert Team</h2>
+        </div>
+      </div>
+      <div class="row">
+        {% for doctor in experts|slice:':4' %}
+        <div class="col-md-3 col-sm-6">
+          <div class="team-box mb50">
+            <div class="team-thumb"> <a href="" class="view"><i class="fa fa-Heart"
+                  aria-hidden="true"></i></a> <img src="" alt=""></div>
+            <div class="team-text">
+              <h5><a href="">{{ doctor.name }}</a></h5>
+              <strong>{{ doctor.speciality }}</strong>
+              <ul class="team-social">
+                {% if doctor.twitter %}
+                <li><a class="tw" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                {% endif %}
+                {% if doctor.facebook %}
+                <li><a class="fb" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                {% endif %}
+                {% if doctor.instagram %}
+                <li><a class="insta" href=""><i class="fa fa-instagram"
+                      aria-hidden="true"></i></a></li>
+                {% endif %}
+              </ul>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section> -->
+
+  
+  <!--Team End-->
+
+
+  <!--Testimonials + Faqs Start-->
+  <!--<section class="testi-faq">
+    <div class="container">
+      <div class="row">-->
+
+        <!--Testimonials Start-->
+        <!--<div class="col-md-6">
+          <div class="home-testimonials">
+            <div class="sectio-title-2"> <strong>Read What Says Our</strong>
+              <h2>Happy Patients</h2>
+            </div>
+            <div id="testimonial-slider" class="owl-carousel owl-theme">-->
+
+              <!--Slider Start-->
+             <!----<div class="item">
+                <div class="testimonial-holder">
+                  <div class="user-thumb"> <img src="{% static 'heartcare/images/tuser.jpg' %}" alt=""> <strong>Anna
+                      Anderson</strong>
+                    <i>A heart patient</i> </div>
+                  <div class="test-text">
+                    <p>An exellent hospital and a Cardiologists. Quisque egestas libero vitae lacus sagittis, eget
+                      viverra tellus vehicula. Aenean efficitur faucibus felis, non laoreet nisl congue non. In quis
+                      pharetra urna. Aliquam in enim efficitur, bibendum dolor eu, elementum turpis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-holder">
+                  <div class="user-thumb"> <img src="{% static 'heartcare/images/tuser-2.jpg' %}" alt=""> <strong>Anna
+                      Anderson</strong>
+                    <i>A heart patient</i> </div>
+                  <div class="test-text">
+                    <p>An exellent hospital and a Cardiologists. Quisque egestas libero vitae lacus sagittis, eget
+                      viverra tellus vehicula. Aenean efficitur faucibus felis, non laoreet nisl congue non. In quis
+                      pharetra urna. Aliquam in enim efficitur, bibendum dolor eu, elementum turpis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-holder">
+                  <div class="user-thumb"> <img src="{% static 'heartcare/images/tuser.jpg' %}" alt=""> <strong>Anna
+                      Anderson</strong>
+                    <i>A heart patient</i> </div>
+                  <div class="test-text">
+                    <p>An exellent hospital and a Cardiologists. Quisque egestas libero vitae lacus sagittis, eget
+                      viverra tellus vehicula. Aenean efficitur faucibus felis, non laoreet nisl congue non. In quis
+                      pharetra urna. Aliquam in enim efficitur, bibendum dolor eu, elementum turpis.
+                    </p>
+                  </div>
+                </div>
+              </div>-->
+
+              <!--Slider End-->
+
+            <!--</div>
+          </div>
+        </div>-->
+        <!--Testimonials End-->
+
+        <!--FAQ Start-->
+        <!--<div class="col-md-6">
+          <div class="home-faq">
+            <div class="sectio-title-2"> <strong>Feel Free For</strong>
+              <h2>Any FAQ’s</h2>
+            </div>
+            <div class="faqs">
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> How much you charge
+                        for consultancy </a> </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body"> Our commercialization strategy involves a rapid development of
+                      treatments for both rotator cuff injuries in the shoulder and meniscus injuries of the knee
+                      joint, with an initial focus on the highly developed. </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+                        data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        What kind of patients do you treat? </a> </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body"> Our commercialization strategy involves a rapid development of
+                      treatments for both rotator cuff injuries in the shoulder and meniscus injuries of the knee
+                      joint, with an initial focus on the highly developed. </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+                        data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree"> Where does my refering Cardiologist go? </a> </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                    aria-labelledby="headingThree">
+                    <div class="panel-body"> Our commercialization strategy involves a rapid development of
+                      treatments for both rotator cuff injuries in the shoulder and meniscus injuries of the knee
+                      joint, with an initial focus on the highly developed. </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>-->
+        <!--FAQ End-->
+
+     <!--</div>
+    </div>
+  </section>-->
+  <!--Testimonials + Faqs End-->
+
+</div>
+<!--Main Content End-->
+{% endblock maincontent %}

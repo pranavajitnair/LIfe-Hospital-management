@@ -1,0 +1,35 @@
+{% load static %}
+<div class="main-slider">
+    <div id="main-slider" class="owl-carousel owl-theme">
+      <div class="item">
+          <div class="slide-caption slide-2">
+            <div class="container">
+              <h1>Service with Empathy and Compassion</h1>
+              <p>At Lifecare you will instantly discover that you are so much more than just a patient</p>
+              <a class="btn-1" href="{% url 'call' %}">Contacts</a> <a class="btn-1" href="{% url 'gallery' %}">Gallery</a>
+            </div>
+          </div>
+          <span class="simg"><img src="{% static 'life/images/main.jpg' %}" alt=""></span>
+        </div>
+        <div class="item">
+          <div class="slide-caption slide-2">
+            <div class="container">
+              <h1>Latest And Best Technology</h1>
+              <p>Our Hospital is empowered with latest equipment and state of art Artificial Intelligence</p>
+              <a class="btn-1" href="{% url 'call' %}">Contacts</a> <a class="btn-1" href="{% url 'gallery' %}">Gallery</a>
+            </div>
+          </div>
+          <span class="simg"><img src="{% static 'life/images/inner2.jpg' %}" alt=""></span>
+        </div>
+        <div class="item">
+          <div class="slide-caption slide-2">
+            <div class="container">
+              <h1>Get Cared For By The Best</h1>
+              <p>Life is home to some of the most eminent doctors in the world</p>
+              <a class="btn-1" href="{% url 'call' %}">Contacts</a> <a class="btn-1" href="{% url 'gallery' %}">Gallery</a>
+            </div>
+          </div>
+          <span class="simg"><img src="{% static 'life/images/ban7.jpg' %}" alt=""></span>
+        </div>
+    </div>
+  </div>
